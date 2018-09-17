@@ -2,10 +2,7 @@
 title: "Homework One"
 author: "Yi Xiao"
 date: 2018-09-11
-output: 
-  html_document:
-    toc: true
-    toc_float: true
+output: github_document
 
 
 ---
@@ -110,17 +107,21 @@ all_data2 <- data.frame(x, y, sum_greater_zero, numer_greater_zero, sum_group)
 ```{r}
 library(ggplot2)
 ggplot(all_data2, aes(x = x, y = y)) + geom_point(aes(colour = sum_greater_zero))
+ggsave("myplot1.png")
 ```
 
 * *color points using the numeric variable*
 ```{r}
 library(ggplot2)
 ggplot(all_data2, aes(x = x, y = y)) + geom_point(aes(colour = numer_greater_zero))
+ggsave("myplot2.png")
 ```
 
 * *color points using the factor variable*
 ```{r}
 library(ggplot2)
 ggplot(all_data2, aes(x = x, y = y)) + geom_point(aes(colour = sum_group))
+ggsave("myplot3.png")
 ```
+
 
