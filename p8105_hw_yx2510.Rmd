@@ -1,5 +1,5 @@
 ---
-title: "Homework One"
+title: "p8105_hw_yx2510"
 author: "Yi Xiao"
 date: 2018-09-11
 output: github_document
